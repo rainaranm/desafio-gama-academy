@@ -1,0 +1,137 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#titulo {
+    color: rgb(77, 19, 131);
+    text-align: center;
+    font-size: 3em;
+    margin-top: 5px;
+    text-overflow: black;
+}
+
+#subtitulo {
+    color: rgb(56, 15, 94);
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    
+}
+
+fieldset {
+   border: 0;
+    margin-bottom: 40px;
+         
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(142, 144, 179);
+    font-size: 1em;
+    color: darkcyan;
+    justify-content: center;
+}
+
+
+form {
+        
+    -webkit-box-shadow: 5px 5px 50px 8px rgba(58, 30, 77, 0.59); 
+    box-shadow: 5px 5px 40px 8px rgba(24, 26, 58, 0.59);
+    display: block;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: white;
+     /* cima - direita - baixo esquerda */
+    padding: 110px 65px 10px 110px;
+    border-radius: 5px;
+        
+}
+
+input, select, textarea, button {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.95em;
+    
+    
+}
+
+label {
+    display: block;
+}
+
+.campo {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+ .campo label, small{
+    margin-bottom: 0.2em;
+    color: rgb(14, 17, 10);
+    
+} 
+
+body .campo {
+    display: inline-block;
+    padding: 3px;
+    
+}
+
+
+.topico {
+    color: rgb(89, 48, 185);
+    margin-bottom: 20px;
+}
+
+.opcoes [option] {
+    border-radius: 5px;
+}
+
+
+
+.required:after {
+    content:"*"; 
+    color: red;
+}
+
+ .campo select option {
+    padding-right: none;
+}
+
+input{
+    padding: 3px;
+}
+
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    }
+
+.enviar {
+    font-size: 1.3em;
+    background: rgb(46, 52, 139);
+    border: 1em;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    transform: translate(-50%, -50%);
+    float: right;     
+}
+
+.enviar:hover {
+    background: rgb(60, 64, 104);
+    text-shadow: none;
+}
+
+
+.veiculo {
+    padding: 0.5em;
+    display: inline-block;
+}  
+
+

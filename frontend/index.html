@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id='titulo'>JobsNET</h1><br>
+        <h4 id='subtitulo'><strong> A empresa JobsNET é especialista em recrutamento e seleção de profissionais nas mais
+                diversas áreas. <br>Complete suas informações para se conectar com as mais diversas oportunidades de
+                emprego:</strong></h4>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <h3 class="topico">Dados pessoais</h3>
+            </div>
+            <div class="campo">
+                <label class="required" for="nome">Nome:</label>
+                <input type="text" name='nome' size='20' id='nome' required>
+            </div>
+
+            <div class="campo" >
+                <label class='required' for="sobrenome">Sobrenome completo:</label>
+                <input type="name" size='30' name='sobrenome' id='sobrenome' required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="cpf">CPF:</label>
+                <input type="text" class="form-control" aria-describedby="sizing-addon1" id="cpf"
+                    placeholder="Digite somente números" required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="data">Data de nascimento:</label>
+                <input id="data" size="20px" type="date" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="profissao">Cargo pretendido:</label>
+                <input type="text" size='20' name='profissao' id='profissao'>
+            </div>
+
+            <div class="campo" class='opcoes'>
+                <label for="genero">Identidade de gênero:</label>
+                <select id="genero">
+                    <option selected disable value=''>Selecione</option>
+                    <option>Feminina</option>
+                    <option>Masculina</option>
+                    <option>Não-binária</option>
+                    <option>Prefiro não dizer</option>
+                    <option>Outra</option>
+                </select>
+            </div>
+
+            <div class="campo" >
+                <input id="qual" type="text" name='qual' size='10' placeholder="Qual?">
+            </div>
+
+            <div class="campo" class='opcoes'>
+                <label for="estadoCivil">Estado civil:</label>
+                <select id="estadoCivil">
+                    <option selected disable value=''>Selecione</option>
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Separado</option>
+                    <option>Divorciado</option>
+                    <option>Viúvo</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div>
+                <h3 class="topico">Contato</h3>
+            </div>
+            <div class="campo">
+                <label class='required' for="email">E-mail:</label>
+                <input type="email" name="email" id='email' placeholder="Exemplo12@gmail.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefoneFixo">Telefone fixo:</label>
+                <input type="text" name='telefoneFixo' id='telefoneFixo' placeholder="Ex: 0000-0000">
+            </div>
+            <div class="campo">
+                <label class='required' for="celular">Celular:</label>
+                <input type="text" name='celular' id='celular'placeholder="Ex:(11)99999-9999" required>
+            </div>
+        </fieldset>
+
+
+        <fieldset class="grupo">
+            <div>
+                <h3 class="topico">Localidade</h3>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="cep">CEP:</label>
+                <input type="text" name='cep' id='cep' placeholder="Digite somente números" required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="logradouro">Logradouro:</label>
+                <input type="text" name='logradouro' id='logradouro' required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="numero">Número:</label>
+                <input type="text" name='numero' id='numero' required>
+            </div>
+
+            <div class="campo">
+                <label class="required" for="bairro">Bairro:</label>
+                <input type="text" name='bairro' id='bairro' required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="cidade">Cidade:</label>
+                <input type="text" name='cidade' id='cidade' required>
+            </div>
+
+            <div class="campo">
+                <label class='required' for="estado">Estado:</label>
+                <input type="text" name='estado' id='estado' required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <h3 class="topico">Dados complementares</h3>
+            <div class="campo">
+                <label for="veiculo">Possui veículo?</label>
+                <label class='veiculo'>
+                    <input type="radio" name='veiculo' value='naoPossuo'> Não possuo
+                </label>
+                <label class='veiculo'>
+                    <input type="radio" name='veiculo' value='masculino'> Carro
+                </label>
+                <label class='veiculo'>
+                    <input type="radio" name='veiculo' value='masculino'> Moto
+                </label>
+                <label class='veiculo'>
+                    <input type="radio" name='veiculo' value='masculino'> Carro e moto
+                </label>
+            </div><br>
+
+
+            <div class="campo" class='opcoes'>
+                <label for="habilitacao">Habilitação:</label>
+                <select id="habilitacao">
+                    <option selected disable value=''>Selecione</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>A e B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                </select>
+            </div>
+            <div id= "botao">
+                <button class="enviar" onclick= "criarCandidato()" type="submit">Enviar!</button>
+            </div>
+        </fieldset>
+ <script>
+        jQuery(function ($) {
+            $(document).ready(function () {
+                $('#qual').hide();
+                $('#genero').change(function () {
+                    if ($('#genero').val() == 'Outra') {
+                        $('#qual').show();
+                    } else {
+                        $('#qual').hide();
+                    }
+                }
+                )
+            }
+            )
+        }
+        )
+    </script> 
+    </form>
+<script src="script.js"></script>
+
+</body>
+</html>

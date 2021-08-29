@@ -1,0 +1,118 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API da JobsNET",
+      "description": "Assa é a API do desafio Gama Academy",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:2002",
+        "description": "Ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: email, gênero, qual gênero nome, CEP, sobrenome,  CPF, data de nascimento, cargo pretendido, telefone fixo, celular, logradouro, número, bairro, cidade, estado, veículo e habilitação",
+          "tags": ["Candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "genero": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                      },
+                      "sobrenome": {
+                        "type": "string"
+                      },
+                      "data": {
+                        "type": "string"
+                      },
+                      "profissao": {
+                        "type": "string"
+                      },
+                      "estadoCivil": {
+                        "type": "string"
+                      },
+                      "qual": {
+                        "type": "string"
+                      },
+                      "telefoneFixo": {
+                        "type": "string"
+                      },
+                      "celular": {
+                        "type": "string"
+                      },
+                      "logradouro": {
+                        "type": "string"
+                      },
+                      "numero": {
+                        "type": "string"
+                      },
+                      "bairro": {
+                        "type": "string"
+                      },
+                      "cidade": {
+                        "type": "string"
+                      },
+                      "estado": {
+                        "type": "string"
+                      },
+                      "veiculo": {
+                        "type": "string"
+                      },
+                      "habilitacao": {
+                        "type": "string"
+                      }
+                  }
+                },
+                "examples": {
+                  "eu mesma": {
+                    "value": {
+                      "nome": "Rainara",
+                      "genero": "Feminina",
+                      "cep": "00000000",
+                      "email": "raim@gmail.co ",
+                      "sobrenome": "Moura",
+                      "cpf": "00000000000",
+                      "data": "19/07/2002",
+                      "profissao": "Dev",
+                      "estadoCivil": "Solteiro",
+                      "telefoneFixo": "0000-0000",
+                      "celular": "(00)00000-0000",
+                      "logradouro": "blabla",
+                      "numero": "000",
+                      "bairro": "Sé",
+                      "cidade": "Salvador",
+                      "estado": "São Paulo",
+                      "veiculo": "Não possuo",
+                      "habilitacao": "A"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
